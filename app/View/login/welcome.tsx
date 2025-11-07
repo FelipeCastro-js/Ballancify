@@ -20,14 +20,12 @@ export default function WelcomeView() {
 
   return (
     <View style={[styles.container, { backgroundColor: TColor.gray }]}>
-      {/* Fondo */}
       <Image
         source={require("@/assets/images/welcome_screen.png")}
         style={styles.backgroundImage}
         resizeMode="cover"
       />
 
-      {/* Contenido */}
       <SafeAreaView style={styles.safeArea}>
         <Image
           source={require("@/assets/images/app_logo.png")}
@@ -64,7 +62,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   backgroundImage: {
-    ...StyleSheet.absoluteFillObject, // ✅ funciona en Android e iOS
+    ...StyleSheet.absoluteFillObject,
   },
   safeArea: {
     flex: 1,
