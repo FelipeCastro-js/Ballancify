@@ -1,50 +1,54 @@
-# Welcome to your Expo app 👋
+# 🎵 Ballancify
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Ballancify es una aplicación móvil moderna diseñada para ayudarte a **gestionar tus finanzas personales** de manera simple, visual y confiable.  
+Inspirada en la idea de balance y armonía, Ballancify busca que cada usuario pueda **organizar sus gastos e ingresos** mientras disfruta de una experiencia fluida y atractiva.
 
-## Get started
+<div align="center">
+  <img width="228" height="499" alt="image" src="https://github.com/user-attachments/assets/b7f519e5-342e-4f70-ac55-28cae7ae6407" />
+</div>
 
-1. Install dependencies
 
+---
+
+## ✨ Características principales
+
+- 📱 **Construida con React Native + Expo**  
+  Una experiencia multiplataforma (iOS y Android) con un diseño minimalista y moderno.
+
+- 🎨 **UI/UX personalizada**  
+  Paleta de colores propia, tipografía Inter y componentes reutilizables (botones, layouts, vistas).
+
+- 🔐 **Autenticación con Firebase**  
+  Registro e inicio de sesión seguro mediante correo electrónico y proveedores sociales.
+
+- ☁️ **Base de datos en tiempo real (Firestore)**  
+  Almacena y sincroniza tus transacciones financieras de manera instantánea.
+
+- 📊 **Gestión de gastos e ingresos**  
+  Visualiza tu balance con gráficos y reportes claros.
+
+- 🌙 **Soporte para modo oscuro/claro**  
+  Adaptado al esquema de color del dispositivo.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **Frontend:** React Native, Expo, TypeScript  
+- **Navegación:** Expo Router, React Navigation  
+- **Estilos:** StyleSheet + componentes personalizados  
+- **Backend & Servicios:** Firebase Authentication, Firestore, Firebase Storage  
+- **Fuentes:** Inter (Bold, Medium, Regular, SemiBold)  
+- **Gestión de estado:** Context API (o futuro Redux/Zustand según necesidades)
+
+---
+
+## 🚀 Instalación y ejecución
+
+1. Clona el repositorio:
    ```bash
+   git clone https://github.com/tuusuario/ballancify.git
+   cd ballancify
    npm install
-   ```
-
-2. Start the app
-
-   ```bash
    npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
