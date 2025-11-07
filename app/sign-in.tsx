@@ -1,4 +1,4 @@
-import SignInView from "./View/login/sign-in";
+import SignInView from "@/app/View/login/sign-in";
 
 export default function SignIn() {
   return <SignInView />;

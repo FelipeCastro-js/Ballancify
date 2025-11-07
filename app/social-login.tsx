@@ -1,4 +1,4 @@
-import SocialLoginView from "./View/login/social-login";
+import SocialLoginView from "@/app/View/login/social-login";
 
 export default function SocialLogin() {
   return <SocialLoginView />;

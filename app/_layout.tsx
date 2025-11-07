@@ -6,6 +6,7 @@ import {
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import React, { useState } from "react";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/use-color-scheme";
@@ -21,20 +22,30 @@ export default function RootLayout() {
     InterRegular: require("@/assets/font/Inter-Regular.ttf"),
     InterSemiBold: require("@/assets/font/Inter-SemiBold.ttf"),
   });
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
   const colorScheme = useColorScheme();
 
   if (!fontsLoaded) {
     return null;
   }
 
+  const screens = ["welcome", "social-login", "sign-in", "sign-up"];
+
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack initialRouteName="welcome">
-        <Stack.Screen name="welcome" options={{ headerShown: false }} />
-        <Stack.Screen name="social-login" options={{ headerShown: false }} />
-        <Stack.Screen name="sign-in" options={{ headerShown: false }} />
-        <Stack.Screen name="sign-up" options={{ headerShown: false }} />
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack>
+        {isLoggedIn ? (
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        ) : (
+          screens.map((name) => (
+            <Stack.Screen
+              key={name}
+              name={name}
+              options={{ headerShown: false }}
+            />
+          ))
+        )}
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

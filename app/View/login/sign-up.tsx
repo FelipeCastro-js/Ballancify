@@ -64,7 +64,7 @@ export default function SignUpView() {
           <PrimaryButton
             title="Get started, it's free!"
             onPress={() => {
-              // navigation.navigate("social-login" as never);
+              navigation.navigate("social-login" as never);
             }}
           />
 
